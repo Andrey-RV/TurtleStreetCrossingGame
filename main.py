@@ -1,8 +1,6 @@
 import time
 from turtle import Screen
-from crossing_game.player import Player
-from crossing_game.car import Car
-from crossing_game.scoreboard import Scoreboard
+from crossing_game import Player, Car, Scoreboard
 
 
 screen = Screen()
