@@ -32,6 +32,8 @@ def main() -> None:
         time.sleep(0.1)
         screen.update()
 
+    screen.exitonclick()
+
 
 if __name__ == "__main__":
     main()
