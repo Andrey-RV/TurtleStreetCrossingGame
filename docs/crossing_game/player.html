@@ -106,7 +106,7 @@ crossing_game<wbr>.player    </h1>
 </span><span id="L-11"><a href="#L-11"><span class="linenos">11</span></a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 </span><span id="L-12"><a href="#L-12"><span class="linenos">12</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;Class responsible to create and move the player.&quot;&quot;&quot;</span>
 </span><span id="L-13"><a href="#L-13"><span class="linenos">13</span></a>        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
-</span><span id="L-14"><a href="#L-14"><span class="linenos">14</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">__initial_config</span><span class="p">()</span>
+</span><span id="L-14"><a href="#L-14"><span class="linenos">14</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">_initial_config</span><span class="p">()</span>
 </span><span id="L-15"><a href="#L-15"><span class="linenos">15</span></a>
 </span><span id="L-16"><a href="#L-16"><span class="linenos">16</span></a>    <span class="k">def</span> <span class="nf">move_up</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 </span><span id="L-17"><a href="#L-17"><span class="linenos">17</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;Move the player up by the const MOVE_DISTANCE.&quot;&quot;&quot;</span>
@@ -137,7 +137,7 @@ crossing_game<wbr>.player    </h1>
 </span><span id="L-42"><a href="#L-42"><span class="linenos">42</span></a>            <span class="k">return</span> <span class="kc">True</span>
 </span><span id="L-43"><a href="#L-43"><span class="linenos">43</span></a>        <span class="k">return</span> <span class="kc">False</span>
 </span><span id="L-44"><a href="#L-44"><span class="linenos">44</span></a>
-</span><span id="L-45"><a href="#L-45"><span class="linenos">45</span></a>    <span class="k">def</span> <span class="nf">__initial_config</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="L-45"><a href="#L-45"><span class="linenos">45</span></a>    <span class="k">def</span> <span class="nf">_initial_config</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 </span><span id="L-46"><a href="#L-46"><span class="linenos">46</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;Set the geometry and color of the player and place it at the bottom of the screen.&quot;&quot;&quot;</span>
 </span><span id="L-47"><a href="#L-47"><span class="linenos">47</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="s2">&quot;turtle&quot;</span><span class="p">)</span>
 </span><span id="L-48"><a href="#L-48"><span class="linenos">48</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">penup</span><span class="p">()</span>
@@ -162,7 +162,7 @@ crossing_game<wbr>.player    </h1>
 </span><span id="Player-12"><a href="#Player-12"><span class="linenos">12</span></a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 </span><span id="Player-13"><a href="#Player-13"><span class="linenos">13</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;Class responsible to create and move the player.&quot;&quot;&quot;</span>
 </span><span id="Player-14"><a href="#Player-14"><span class="linenos">14</span></a>        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
-</span><span id="Player-15"><a href="#Player-15"><span class="linenos">15</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">__initial_config</span><span class="p">()</span>
+</span><span id="Player-15"><a href="#Player-15"><span class="linenos">15</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">_initial_config</span><span class="p">()</span>
 </span><span id="Player-16"><a href="#Player-16"><span class="linenos">16</span></a>
 </span><span id="Player-17"><a href="#Player-17"><span class="linenos">17</span></a>    <span class="k">def</span> <span class="nf">move_up</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 </span><span id="Player-18"><a href="#Player-18"><span class="linenos">18</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;Move the player up by the const MOVE_DISTANCE.&quot;&quot;&quot;</span>
@@ -193,7 +193,7 @@ crossing_game<wbr>.player    </h1>
 </span><span id="Player-43"><a href="#Player-43"><span class="linenos">43</span></a>            <span class="k">return</span> <span class="kc">True</span>
 </span><span id="Player-44"><a href="#Player-44"><span class="linenos">44</span></a>        <span class="k">return</span> <span class="kc">False</span>
 </span><span id="Player-45"><a href="#Player-45"><span class="linenos">45</span></a>
-</span><span id="Player-46"><a href="#Player-46"><span class="linenos">46</span></a>    <span class="k">def</span> <span class="nf">__initial_config</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="Player-46"><a href="#Player-46"><span class="linenos">46</span></a>    <span class="k">def</span> <span class="nf">_initial_config</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 </span><span id="Player-47"><a href="#Player-47"><span class="linenos">47</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;Set the geometry and color of the player and place it at the bottom of the screen.&quot;&quot;&quot;</span>
 </span><span id="Player-48"><a href="#Player-48"><span class="linenos">48</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="s2">&quot;turtle&quot;</span><span class="p">)</span>
 </span><span id="Player-49"><a href="#Player-49"><span class="linenos">49</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">penup</span><span class="p">()</span>
@@ -222,7 +222,7 @@ Turtle method is called a TurtleScreen object is automatically created.</p>
             <div class="pdoc-code codehilite"><pre><span></span><span id="Player.__init__-12"><a href="#Player.__init__-12"><span class="linenos">12</span></a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 </span><span id="Player.__init__-13"><a href="#Player.__init__-13"><span class="linenos">13</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;Class responsible to create and move the player.&quot;&quot;&quot;</span>
 </span><span id="Player.__init__-14"><a href="#Player.__init__-14"><span class="linenos">14</span></a>        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
-</span><span id="Player.__init__-15"><a href="#Player.__init__-15"><span class="linenos">15</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">__initial_config</span><span class="p">()</span>
+</span><span id="Player.__init__-15"><a href="#Player.__init__-15"><span class="linenos">15</span></a>        <span class="bp">self</span><span class="o">.</span><span class="n">_initial_config</span><span class="p">()</span>
 </span></pre></div>
 
 
