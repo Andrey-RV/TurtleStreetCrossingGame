@@ -11,7 +11,7 @@ class Player(Turtle):
     def __init__(self) -> None:
         """Class responsible to create and move the player."""
         super().__init__()
-        self.__initial_config()
+        self._initial_config()
 
     def move_up(self) -> None:
         """Move the player up by the const MOVE_DISTANCE."""
@@ -42,7 +42,7 @@ class Player(Turtle):
             return True
         return False
 
-    def __initial_config(self):
+    def _initial_config(self):
         """Set the geometry and color of the player and place it at the bottom of the screen."""
         self.shape("turtle")
         self.penup()

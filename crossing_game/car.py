@@ -17,7 +17,7 @@ class Car(Turtle):
             current_speed (int): A class attribute that stores the current speed of the cars.
         """
         super().__init__()
-        self.__initial_config()
+        self._initial_config()
 
     @classmethod
     def increase_speed(cls):
@@ -30,7 +30,7 @@ class Car(Turtle):
         for car in cars:
             car.forward(INITIAL_SPEED + cls.current_speed)
 
-    def __initial_config(self) -> None:
+    def _initial_config(self) -> None:
         """Set the geometry and color of the car and place it at the right side of the screen."""
         self.shape("square")
         self.shapesize(stretch_len=2, stretch_wid=1)
