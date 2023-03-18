@@ -9,22 +9,22 @@ FINISH_POINT = 280
 
 class Player(Turtle):
     def __init__(self) -> None:
-        """_Class responsible for creating the player and moving it up_"""
+        """Class responsible to create and move the player."""
         super().__init__()
         self.__initial_config()
 
     def move_up(self) -> None:
-        """_Move the player up by the const MOVE_DISTANCE_"""
+        """Move the player up by the const MOVE_DISTANCE."""
         self.forward(MOVE_DISTANCE)
 
     def hit_a_car(self, cars: MutableSequence[Car]) -> bool:
-        """_Check if the player hit a car_
+        """Check if the player hit a car.
 
         Args:
-            cars (MutableSequence[Car]): _A sequence containing the cars on the screen_
+            cars (MutableSequence[Car]): A sequence containing the cars on the screen.
 
         Returns:
-            bool: _Whether the player hit a car or not_
+            bool: .Whether the player hit a car or not.
         """
         for car in cars:
             if self.distance(car) <= 15:
@@ -32,10 +32,10 @@ class Player(Turtle):
         return False
 
     def won(self) -> bool:
-        """_Check if the player reached the finish line_
+        """Check if the player reached the finish line.
 
         Returns:
-            bool: _Whether the player reached the finish line or not_
+            bool: Whether the player reached the finish line or not.
         """
         if self.ycor() == FINISH_POINT:
             self.goto(START_POSITION)
@@ -43,7 +43,7 @@ class Player(Turtle):
         return False
 
     def __initial_config(self):
-        """_Set the geometry and color of the player and place it at the bottom of the screen_"""
+        """Set the geometry and color of the player and place it at the bottom of the screen."""
         self.shape("turtle")
         self.penup()
         self.goto(START_POSITION)
