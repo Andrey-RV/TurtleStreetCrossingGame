@@ -1,6 +1,6 @@
 import time
 from turtle import Screen
-from crossing_game import Player, Car, Scoreboard
+from crossing_game import Player, Car, Scoreboard, save_best_try
 
 
 def main() -> None:
@@ -22,17 +22,19 @@ def main() -> None:
         if current_loop % 6 == 0:
             cars.append(Car())
         Car.move_the_cars(cars)
+
         if turtle.hit_a_car(cars):
             scoreboard.game_over()
             game_is_on = False
+            save_best_try(scoreboard.level)
+
         if turtle.won():
             Car.increase_speed()
             scoreboard.go_to_next_level()
+
         current_loop += 1
         time.sleep(0.1)
         screen.update()
-
-    screen.exitonclick()
 
 
 if __name__ == "__main__":
